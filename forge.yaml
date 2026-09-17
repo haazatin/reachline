@@ -1,0 +1,22 @@
+schema_version: 1
+application:
+  name: reachline
+  primary_service: app
+  node_version: "22"
+  commands:
+    install: npm ci
+    build: npm run build
+    start: npm start
+    test: npm test
+  port: 8080
+  liveness_path: /healthz
+  readiness_path: /readyz
+  dependencies: []
+organization_profile:
+  status: absent
+  path: .forge/organization-profile.md
+  profile_version: null
+  sha256: null
+  applicable_rules: []
+  approved_service_bindings: []
+  unresolved_decisions: []
