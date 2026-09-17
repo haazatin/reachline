@@ -1,0 +1,14 @@
+.git
+.github
+.forge
+node_modules
+dist
+coverage
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+npm-debug.log*
+README.md
